@@ -13,5 +13,11 @@ using namespace std;
 class nota
 {
     private:
-        int n;
-        double ;
+        int sivol;
+        int A,B,C,D,I,F,G,cis, dis, eis, fis, gis, ais, h, ces,  des, es, fes, ges, aes, hes;
+
+        
+        
+        public:
+    int GetSimvol() { return simvol; }
+    void SetSimvol(int simv) { simvol=simv; }
