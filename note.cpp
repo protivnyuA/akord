@@ -16,6 +16,9 @@ class nota
         
         
         public:
+        nota();//default constructor
+        nota(int newsimvol)// конструктор, якщо задано код ноти (0 - с1)
+        ~nota();//destructor
     int GetSimvol() { return simvol; }
     void SetSimvol(int simv);
     char GetNota_name() { return nota_name; }
@@ -24,6 +27,8 @@ class nota
     void SetOctave(int oct); 
     int GetNote() { return note; }
     void SetNote (int note); 
+    void Show();// для вивода на екран
+    friend interval operator-(nota &a,nota &b);// визначення інтервала між двома нотами
 }
 
 
@@ -43,9 +48,18 @@ class nota
       else if (note==9) {nota_name[0]="A";nota_name[1]=0;nota_name[1]=0;}
       else if (note==10) {nota_name[0]="A";nota_name[1]="#";nota_name[1]=0;}
       else if (note==11) {nota_name[0]="B";nota_name[1]=0;nota_name[1]=0;}
-      else (note=12) {}
+      else //(note=12)
+      {nota_name[0]="C";nota_name[1]=0;}
       
       
       
       
     }
+
+main()
+{
+nota a(0),b(2),c(4);
+a.show();
+b.show();
+c.show();
+}
