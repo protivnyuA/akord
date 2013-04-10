@@ -17,7 +17,7 @@ class nota
         
         public:
         nota();//default constructor
-        nota(int newsimvol)// конструктор, якщо задано код ноти (0 - с1)
+        nota(int newsimvol);// конструктор, якщо задано код ноти (0 - с1)
         ~nota();//destructor
     int GetSimvol() { return simvol; }
     void SetSimvol(int simv);
