@@ -63,3 +63,20 @@ a.show();
 b.show();
 c.show();
 }
+class intervaly
+{
+    private:
+        nota nota_first;  
+        nota nota_second;
+        nota interval;
+                public:
+    interval();//default constructor
+    interval(int newsimvol)// конструктор
+    ~interval();//destructor
+    int GetNota_firs() { return nota_first; }
+    void SetNota_first (int n_first);
+    char GetNota_second() { return nota_second; }
+    void SetNota_second(int n_second); 
+    int GetIntervaly() { return interval; }
+    void SetInterval(int interv);
+
