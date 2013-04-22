@@ -21,14 +21,15 @@ class nota
         ~nota();//destructor
     int GetSimvol() { return simvol; }
     void SetSimvol(int simv);
-    char GetNota_name() { return nota_name; }
-    void SetNota_name(char name); 
+    char* GetNota_name() { return nota_name; }
+    void SetNota_name(char* name); 
     int GetOctave() { return octave; }
     void SetOctave(int oct); 
     int GetNote() { return note; }
     void SetNote (int note); 
     void Show();// для вивода на екран
     friend interval operator~(nota &a,nota &b);// визначення інтервала між двома нотами
+    void showNota_name();
 }
 
 
