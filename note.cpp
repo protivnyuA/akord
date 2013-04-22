@@ -28,7 +28,7 @@ class nota
     int GetNote() { return note; }
     void SetNote (int note); 
     void Show();// для вивода на екран
-    friend interval operator-(nota &a,nota &b);// визначення інтервала між двома нотами
+    friend interval operator~(nota &a,nota &b);// визначення інтервала між двома нотами
 }
 
 
@@ -79,4 +79,8 @@ class intervaly
     void SetNota_second(int n_second); 
     int GetIntervaly() { return interval; }
     void SetInterval(int interv);
+void SetInterval (int interval); 
+void Show();// для вивода на екран
+    
+    
 
